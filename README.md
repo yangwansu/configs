@@ -1,3 +1,5 @@
+## git
+```
 alias.s=status
 alias.a=!git add . && git status
 alias.au=!git add -u . && git status
@@ -16,6 +18,8 @@ alias.master=checkout master
 alias.spull=svn rebase
 alias.spush=svn dcommit
 alias.alias=!git config --list | grep ‘alias\.’ | sed ‘s/alias\.\([^=]*\)=\(.*\)/\1\     => \2/’ | sort
+```
+
+## iterm2
 
 
-# my-gitconfig
