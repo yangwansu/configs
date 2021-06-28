@@ -35,5 +35,10 @@ alias.alias=!git config --list | grep ‘alias\.’ | sed ‘s/alias\.\([^=]*\)=
 ```
 
 ## iterm2
+https://iterm2.com/
 
-
+## zsh
+https://ohmyz.sh/#install
+``` shell
+ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+ ```
