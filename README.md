@@ -1,3 +1,14 @@
+## brew
+
+```
+brew install wget
+brew install httpie
+brew install git
+brew install gradle
+brew install maven
+brew install vagrant
+```
+
 ## git
 ```
 alias.s=status
