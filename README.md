@@ -22,26 +22,43 @@
 - [ ] brew install vagrant
 
 ## Config Git
+
+### Alias
+Global Config File 
+```shell
+git config --list --show-origin --show-scope
 ```
-alias.s=status
-alias.a=!git add . && git status
-alias.au=!git add -u . && git status
-alias.aa=!git add . && git add -u . && git status
-alias.c=commit
-alias.cm=commit -m
-alias.ca=commit --amend
-alias.ac=!git add . && git commit
-alias.acm=!git add . && git commit -m
-alias.l=log --graph --all --pretty=format:‘%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset’
-alias.ll=log --stat --abbrev-commit
-alias.lg=log --color --graph --pretty=format:‘%C(bold white)%h%Creset -%C(bold green)%d%Creset %s %C(bold green)(%cr)%Creset %C(bold blue)<%an>%Creset’ --abbrev-commit --date=relative
-alias.llg=log --color --graph --pretty=format:‘%C(bold white)%H %d%Creset%n%s%n%+b%C(bold blue)%an <%ae>%Creset %C(bold green)%cr (%ci)’ --abbrev-commit
-alias.d=diff
-alias.master=checkout master
-alias.spull=svn rebase
-alias.spush=svn dcommit
-alias.alias=!git config --list | grep ‘alias\.’ | sed ‘s/alias\.\([^=]*\)=\(.*\)/\1\     => \2/’ | sort
+
+``` properties
+[alias]
+    s=status
+    a=!git add . && git status
+    au=!git add -u . && git status
+    aa=!git add . && git add -u . && git status
+    c=commit
+    cm=commit -m
+    ca=commit --amend
+    ac=!git add . && git commit
+    acm=!git add . && git commit -m
+    l=log --graph --all --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+    ll=log --stat --abbrev-commit
+    lg=log --color --graph --pretty=format:'%C(bold white)%h%Creset -%C(bold green)%d%Creset %s %C(bold green)(%cr)%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    llg=log --color --graph --pretty=format:'%C(bold white)%H %d%Creset%n%s%n%+b%C(bold blue)%an <%ae>%Creset %C(bold green)%cr (%ci)' --abbrev-commit
+    d=diff
+    master=checkout master
+    main=checkout main
+    develop=checkout main
+   
 ```
+
+```  shell
+git config --global pull.rebase true
+```
+
+[Git Credential Manager Core](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git#git-credential-manager-core)
+
+
+
 
 pull --rebase=true
 
@@ -67,6 +84,19 @@ https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcme
 
 ## install java 
 
+
+## Install Intellij Plugins 
+
+Key Promoter X
+
+## configure idea vm options
+idea.vmoptions
+```
+-Xmx2048m
+-Xms2048m
+```
+
+## Create Command line launcher
 
 
 
